@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#container{
+    min-height: 100vh;
+    display: flex;
+
+}
+.right{
+    width:30vw;
+    background-color: rgb(177, 212, 195);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+.right-block{
+    width:50vw;
+    background-color: rgb(177, 212, 195);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width:57vw;
+    background-color: #abc;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+#todo_name{
+    width: 80%;
+    height:40px;
+    border-radius: 5px;
+    padding-left:20px;
+    
+}
+ input[type="text"]{
+    width:91%;
+    padding: 12px 20px;
+    display:inline-block;
+    border:1 px solid rgb(165,161,161);
+    border-radius:  4px;
+} 
+
+#add_todo{
+    width:80%;
+    height:40px;
+    background-color: rgb(79,140,255);
+    color:#fff; 
+    display: inline-block;
+    gap:70px;
+    font-size: 20px;
+    cursor:pointer;
+    transition:.2s;
+}
+.add_todo:hover{
+    background-color: rgb(38,113,253);
+}
+.todo{
+    width:80%;
+    height:40px;
+    margin:10px 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+.todo .close{
+    position: absolute;
+    right:20px;
+    top:0px;
+    font-size: 2rem;
+}
+table{
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 87%;
+    border-radius: 12px 12px 0 0;
+    overflow:hidden;
+    box-shadow: 0 5px 12px rgba(32,32,32,.3);
+    text-align:center;
+
+}
+th,td{
+    padding:10px 2px;
+}
+th{
+    background-color:rgba(125, 116, 202, 0.699);
+    text-transform: capitalize;
+    position:relative;
+}
+tr:nth-child(odd){
+    background-color: #abc;
+}
+tr:nth-child(even){
+    background-color: rgb(242, 238, 238);
+}
+#icon{
+    font-size: 19px;
+    position: absolute;
+    padding-left: 2px;
+}
+.delete{
+    font-size: 17px;
+    border-radius: 13px 13px 13px 13px;
+    background-color: rgb(255, 62, 62);
+    padding: 3px;
+    color: black;
+}
+
